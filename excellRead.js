@@ -5,4 +5,12 @@ const workbook = new ExcelJS.Workbook();
 workbook.xlsx.readFile('SummitGR.xlsx').then(() => {
     // Access the worksheets in the workbook
     const worksheet = workbook.getWorksheet('summit');
+
+    //Iterate through the rows in the worksheet
+    worksheet.eachRow((row,rowNumber) => {
+        // Iterate through the cells in each row
+        row.eachCell((cell,colNumber) => {
+
+        });
+    });
 });
