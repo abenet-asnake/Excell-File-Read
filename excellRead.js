@@ -10,7 +10,8 @@ workbook.xlsx.readFile('SummitGR.xlsx').then(() => {
     worksheet.eachRow((row,rowNumber) => {
         // Iterate through the cells in each row
         row.eachCell((cell,colNumber) => {
-
+// Access cell values
+console.log('Cell ${cell.address}: ${cell.value}');
         });
     });
 });
