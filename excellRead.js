@@ -6,4 +6,4 @@ const readingExcel = excelReader.readFile('SUmmitGR.xlsx');
 
 let sheetData= [];
 
-
+const readAllSheets=readingExcel.SheetNames;
